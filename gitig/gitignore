@@ -1,0 +1,32 @@
+*target*
+*.jar
+*.war
+*.ear
+*.class
+
+# eclipse specific git ignore
+*.pydevproject
+.project
+*.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+*.classpath
+.settings/
+.loadpath
+
+# gradle
+.gradle/
+
+bin
+*.classpath
+*.project
+build
+*.log
