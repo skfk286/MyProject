@@ -10,9 +10,15 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import com.ycjung.util.Constant;
+
 public class Paging {
 	
     DataSource ds;
+    
+    JdbcTemplate template = null;
     
     public Paging() {
         try {
@@ -21,6 +27,8 @@ public class Paging {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        
+        template = Constant.template;
     }
     
 	public PagingVo membersAboutList() {

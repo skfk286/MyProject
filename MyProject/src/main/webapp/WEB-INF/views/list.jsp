@@ -53,7 +53,14 @@
 		<tbody>
 			<tr>
 				<%
-					int viewPageSize = pv.getDisplayRow();
+					int viewPageSize = 0;
+					if(dtos.size() < pv.getDisplayRow()){
+					    viewPageSize = dtos.size();
+					}
+					else{
+					    viewPageSize = pv.getDisplayRow();
+					}
+					
 					int j = currentPage * viewPageSize;
 					viewPageSize += j;
 					for(;j<viewPageSize;j++){ // 한 페이지에 보여줄 만큼 j 증가.
