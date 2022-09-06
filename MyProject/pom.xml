@@ -3,7 +3,6 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ycjung</groupId>
-	<artifactId>project</artifactId>
 	<name>MyProject</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
@@ -24,9 +23,9 @@
     
 		<!-- oracle driver -->
 		<dependency>
-		    <groupId>com.oracle</groupId>
-		    <artifactId>ojdbc6</artifactId>
-		    <version>11.2.0.4</version>
+		  <groupId>oracle</groupId>
+		  <artifactId>ojdbc8</artifactId>
+		  <version>8</version>
 		</dependency>
 
 		<!-- Spring -->
@@ -170,4 +169,5 @@
             </plugin>
         </plugins>
     </build>
+    <artifactId>MyProject</artifactId>
 </project>
